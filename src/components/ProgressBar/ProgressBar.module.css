@@ -1,0 +1,32 @@
+.progressBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progressBar .percentage {
+  margin-right: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bar {
+    display: block;
+    position: relative;
+    width: 75vw;
+    height: 10px;
+    background-color: #d4d9ea;
+    border-radius: 5px;
+  }
+  .bar .sliderGauge {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #5567ae;
+  }
+}
+/*# sourceMappingURL=ProgressBar.module.css.map */

@@ -1,0 +1,90 @@
+@import "../../../variables.scss";
+
+.page {
+  position: relative;
+  background-color: $primary-background;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+
+  .box {
+    height: max-content;
+    width: 30%;
+    min-width: 300px;
+
+    & > section {
+      margin-bottom: $base-spacing * 3;
+    }
+
+    h2 {
+      color: $secondary-color;
+      margin-bottom: $base-spacing * 2;
+    }
+
+    .inputFieldContainer {
+      height: 35px;
+    }
+
+    .arrows {
+      display: flex;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+      background-color: $primary-background;
+      border-bottom: solid 2px $primary-color;
+    }
+  }
+}
+
+.questionPerson {
+  display: none;
+  position: absolute;
+  right: 20%;
+  bottom: 30px;
+  height: 200px;
+  width: 100px;
+}
+
+.leftArrow {
+  transform: rotate(270deg);
+  width: 60px;
+  height: 60px;
+}
+
+.rightArrow {
+  transform: rotate(90deg);
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (min-width: 764px) {
+  .page {
+    align-items: center;
+
+    .questionPerson {
+      display: unset;
+    }
+
+    .box {
+      .arrows {
+        position: static;
+        border-bottom: none;
+      }
+
+      .leftArrow {
+        position: absolute;
+        transform: rotate(270deg);
+        left: 60px;
+        top: calc(50vh - 30px);
+      }
+      .rightArrow {
+        position: absolute;
+        transform: rotate(90deg);
+        right: 60px;
+        top: calc(50vh - 30px);
+      }
+    }
+  }
+}

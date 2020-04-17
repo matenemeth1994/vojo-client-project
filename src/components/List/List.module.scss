@@ -1,0 +1,7 @@
+@import "../../variables.scss";
+
+.list {
+    line-height: 1.25;
+    list-style-position: inside;
+    padding: $base-spacing;
+}

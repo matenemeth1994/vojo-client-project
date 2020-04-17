@@ -1,0 +1,170 @@
+@import "../../variables.scss";
+
+.navBarFlex {
+  display: flex;
+  justify-content: space-between;
+
+  .prioritiesPage {
+    font-style: inherit;
+    width: 100%;
+    height: 100%;
+    padding: $base-spacing * 2;
+    background-color: $primary-background;
+
+    .yourNutrients {
+      @include flex-row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2vh;
+
+      .link {
+        text-decoration: none;
+      }
+
+      h3 {
+        font-size: $base-spacing * 3;
+        margin-bottom: $base-spacing;
+        color: $vojo-brown;
+      }
+
+      div {
+        height: $base-spacing * 4;
+        width: $base-spacing * 20;
+        @include flex-row;
+        justify-content: flex-end;
+        align-items: center;
+
+        p {
+          color: $primary-color;
+        }
+
+        .arrow {
+          height: $base-spacing * 4;
+          width: $base-spacing * 4;
+          margin-left: $base-spacing;
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      font-size: $base-spacing * 6;
+      padding-top: $base-spacing;
+    }
+
+    .noSampleBox {
+      h3 {
+        font-size: $base-spacing * 3;
+        padding-bottom: $base-spacing;
+      }
+      margin: 5vh 0;
+    }
+
+    .hideNoSampleBox {
+      display: none;
+    }
+
+    .priorityBoxesSection {
+      @include flex-column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100vh;
+      margin-top: 12vh;
+
+      .priorityCardContainer {
+        width: 100%;
+        height: 100%;
+        margin-bottom: $base-spacing * 2;
+      }
+    }
+
+    .vegPerson {
+      width: 20vh;
+      height: 20vh;
+      margin: 0 auto;
+      margin-top: $base-spacing * 10;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .prioritiesPage {
+      font-style: inherit;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-background;
+      padding: $base-spacing * 4;
+
+      .yourNutrients {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2vh;
+
+        h3 {
+          font-size: $base-spacing * 3;
+          margin-bottom: $base-spacing;
+        }
+
+        div {
+          height: $base-spacing * 4;
+          width: $base-spacing * 20;
+          @include flex-row;
+          justify-content: flex-end;
+          align-items: center;
+
+          p {
+            color: $primary-color;
+          }
+
+          .arrow {
+            height: $base-spacing * 4;
+            width: $base-spacing * 4;
+            margin-left: $base-spacing;
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      h2 {
+        text-align: left;
+        font-size: $heading-2-size;
+        padding-top: $base-spacing;
+        padding-bottom: 5vh;
+      }
+
+      .noSampleBox {
+        h3 {
+          font-size: $base-spacing * 3;
+          padding-bottom: $base-spacing;
+        }
+        margin: 5vh 0;
+      }
+
+      .hideNoSampleBox {
+        display: none;
+      }
+
+      .priorityBoxesSection {
+        @include flex-row;
+        justify-content: space-between;
+        width: 100%;
+        height: 30vh;
+        min-height: 200px;
+        margin-top: 12vh;
+
+        .priorityCardContainer {
+          width: 30%;
+          height: 100%;
+        }
+      }
+
+      .vegPerson {
+        width: 20vh;
+        height: 20vh;
+        margin-left: 60vw;
+        margin-top: 4vh;
+      }
+    }
+  }
+}

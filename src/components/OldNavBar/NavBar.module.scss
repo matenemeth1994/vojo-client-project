@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.navBar {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+
+  .navBarLogo {
+    width: 110px;
+    padding-left: $base-spacing * 6;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-right: $base-spacing * 6;
+
+    p {
+      padding: 0 $base-spacing * 2;
+    }
+
+    .logOut {
+      text-decoration: underline;
+      font-weight: lighter;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.sidePanelContainer {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.sidePanelContainer .sidePanel {
+  background-color: #f2e4d0;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidePanelContainer .sidePanel .topWave {
+  height: 15vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidePanelContainer .sidePanel .bottomWave {
+  height: 15vh;
+  width: 100%;
+}
+
+.sidePanelContainer .sidePanel .closeButton {
+  cursor: pointer;
+  color: #b44370;
+  text-decoration: underline;
+  position: absolute;
+  margin: 0;
+  top: 8px;
+  left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidePanelContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: #000000cc;
+  }
+  .sidePanelContainer .sidePanel {
+    width: 50%;
+  }
+  .sidePanelContainer .sidePanel .bottomWave {
+    height: 15vh;
+    width: 100%;
+    position: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidePanelContainer .sidePanel {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=SidePanel.module.css.map */

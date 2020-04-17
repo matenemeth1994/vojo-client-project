@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f2e9;
+  text-align: center;
+}
+
+.container .btn {
+  margin-top: 16px;
+  width: 60%;
+  height: 50px;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.container .btn :hover {
+  cursor: pointer;
+}
+
+.container .btn a {
+  text-decoration: none;
+}
+
+.container .leftImg {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 10%;
+}
+
+.container .rightImg {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 10%;
+}
+
+.container .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85vw;
+  height: 50vh;
+  border: 2px solid #ef7d40;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: rgba(235, 200, 149, 0.25);
+}
+
+.container .box .techSupport {
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  opacity: 0.3;
+}
+
+.container .box h1 {
+  font-size: calc(32px + (72 - 32) * ((100vw - 440px) / (1920 - 440)));
+  margin: 16px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.container .box h2 {
+  font-size: calc(22px + (52 - 22) * ((100vw - 440px) / (1920 - 440)));
+  margin: 16px;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .leftImg {
+    width: 10%;
+  }
+  .container .rightImg {
+    width: 10%;
+  }
+  .container .box {
+    width: 65vw;
+    height: 60vh;
+  }
+  .container .box .techSupport {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container .box {
+    width: 65vw;
+    height: 60vh;
+  }
+}
+/*# sourceMappingURL=UnderConstructionPage.module.css.map */

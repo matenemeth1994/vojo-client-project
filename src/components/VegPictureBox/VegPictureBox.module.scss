@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.card {
+  border: 2px $vojo-brown solid;
+  background-color: $light-brown;
+  border-radius: $base-spacing;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: $base-spacing;
+
+  .vegChar {
+    height: 80%;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+
+    img {
+      height: 90%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  p {
+    height: 20%;
+    width: 100%;
+    color: $dark-green-text;
+    font-size: $base-spacing * 2;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    .vegChar {
+      height: 80%;
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: $base-spacing * 1.5;
+    }
+  }
+}

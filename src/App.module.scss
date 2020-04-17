@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gt-walsheim;
+  font-weight: normal;
+}
+
+p,
+ul {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+body {
+  background-color: $primary-background;
+  margin-top: $base-spacing * 9;
+}
+
+@font-face {
+  font-family: "gt-walsheim";
+  src: url(./assets/fonts/gt-walsheim-pro-light.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-walsheim";
+  src: url(./assets/fonts/gt-walsheim-pro-medium.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 0;
+  }
+}

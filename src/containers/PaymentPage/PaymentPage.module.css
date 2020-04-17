@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBarFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBarFlex .paymentPage {
+  width: 100%;
+  height: 100%;
+}
+
+.navBarFlex .header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navBarFlex .header h2 {
+  text-align: center;
+  font-size: calc(22px + (32 - 22) * ((100vw - 440px) / (1920 - 440)));
+}
+
+.navBarFlex .mainContainer {
+  width: 90vw;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navBarFlex .mainContainer div {
+  margin: 4px 0;
+}
+
+.navBarFlex .mainContainer .details {
+  width: 100%;
+  height: 55%;
+}
+
+.navBarFlex .mainContainer .summary {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.navBarFlex .mainContainer .summary .btns {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 568px) {
+  .navBarFlex .mainContainer {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navBarFlex .mainContainer {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navBarFlex .header {
+    margin: 32px 0 32px 0;
+  }
+  .navBarFlex .mainContainer {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navBarFlex .mainContainer .details {
+    width: 55%;
+  }
+  .navBarFlex .mainContainer .summary {
+    width: 40%;
+  }
+  .navBarFlex .mainContainer .summary .btns {
+    display: unset;
+  }
+}
+/*# sourceMappingURL=PaymentPage.module.css.map */

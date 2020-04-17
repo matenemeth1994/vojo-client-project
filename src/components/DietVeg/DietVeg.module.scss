@@ -1,0 +1,25 @@
+
+  .secInfo {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 40vh;
+    width: 40vw;
+  
+    .imgs{ 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  
+      .primary {
+        height: 80%;
+        width: 70%;
+      }
+    }
+  
+  
+  }
+
+
+

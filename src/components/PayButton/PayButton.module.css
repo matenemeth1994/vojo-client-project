@@ -1,0 +1,37 @@
+.btn {
+  padding: 1vw 2vw;
+  color: white;
+  background-color: #b44370;
+  font-size: calc(18px + (24 - 18) * ((100vw - 440px) / (1920 - 440)));
+  border: none;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.btn:hover {
+  background-color: #b44370cc;
+}
+
+.payPal {
+  color: white;
+  background-color: #5567ae;
+}
+
+.payPal:hover {
+  background-color: #5567aecc;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    width: 100%;
+    margin: 8px 0;
+    padding: .5vw 2vw;
+  }
+}
+/*# sourceMappingURL=PayButton.module.css.map */

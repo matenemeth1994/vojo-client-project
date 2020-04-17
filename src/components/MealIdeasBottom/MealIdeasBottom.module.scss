@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.mealList {
+  list-style-type: none;
+  width: 100%;
+  font-weight: 300;
+  font-size: 12px;
+
+  .dash {
+    color: $vojo-orange;
+  }
+
+  .belowDash {
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing;
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .mealList {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mealList {
+    font-size: 18px;
+  }
+}

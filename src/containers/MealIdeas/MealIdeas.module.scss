@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.mealIdeas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 $base-spacing 0 $base-spacing;
+
+  .dietContainer {
+    margin: $base-spacing;
+    width: 40%;
+    height: 50vh;
+  }
+}
+
+.mealHeader {
+  color: $secondary-color;
+  margin-left: $base-spacing * 2;
+}
+
+@media only screen and (min-width: 764px) {
+  .dietContainer {
+    margin: $base-spacing $base-spacing * 4 $base-spacing $base-spacing * 4;
+    justify-content: space-around;
+    width: 20%;
+  }
+
+  .mealIdeas {
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
+
+  .mealHeader {
+    margin: $base-spacing * 2 0 $base-spacing * 2 $base-spacing * 2;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .dietContainer {
+    margin: $base-spacing $base-spacing * 6 $base-spacing $base-spacing * 6;
+    justify-content: space-around;
+  }
+
+  .mealIdeas {
+    height: 100vh;
+  }
+
+  .mealHeader {
+    margin: $base-spacing * 2 0 $base-spacing * 2 $base-spacing * 2;
+  }
+}

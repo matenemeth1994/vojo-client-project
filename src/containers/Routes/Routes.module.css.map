@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Routes.module.scss"
+    ],
+    "names": [],
+    "file": "Routes.module.css"
+}

@@ -1,0 +1,105 @@
+.navBarFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBarFlex .nutrientsFlex {
+  width: 100%;
+}
+
+.navBarFlex .nutrientsFlex .mainHeading {
+  padding: 24px 0;
+  position: relative;
+  font-size: 48px;
+  text-align: center;
+  z-index: 1;
+}
+
+.navBarFlex .nutrientsFlex .showPanel {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.navBarFlex .nutrientsFlex .nutrientPage {
+  min-width: 100%;
+  position: relative;
+}
+
+.navBarFlex .nutrientsFlex .infoCardHolder {
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navBarFlex .nutrientsFlex .nutrientPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBarFlex .nutrientsFlex .nutrientPage .infoCardHolder {
+    padding: 8px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navBarFlex .nutrientsFlex .nutrientPage .topContainer {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 0;
+  }
+  .navBarFlex .nutrientsFlex .nutrientPage .mainHeading {
+    padding-bottom: 5vh;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navBarFlex {
+    padding: 8px 24px;
+  }
+  .navBarFlex .nutrientsFlex .mainHeading {
+    padding-top: 32px;
+    padding-bottom: 5vh;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=NutrientsPage.module.css.map */

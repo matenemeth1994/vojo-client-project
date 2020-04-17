@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACJ,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAiB;EACtB,IAAI,EAAE,IAAiB;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "MaintenancePage.module.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "MaintenancePage.module.css"
+}

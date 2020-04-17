@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+
+.navBarFlex {
+  display: flex;
+  justify-content: space-between;
+
+  .nutrientsFlex {
+    width: 100%;
+
+    .mainHeading {
+      padding: $base-spacing * 3 0;
+      position: relative;
+      font-size: $base-spacing * 6;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .showPanel {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+    }
+
+    .nutrientPage {
+      min-width: 100%;
+      position: relative;
+    }
+
+    .infoCardHolder {
+      padding: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      background: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navBarFlex {
+    .nutrientsFlex {
+      .nutrientPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .infoCardHolder {
+          padding: $base-spacing 0;
+          flex-direction: row;
+          align-items: flex-start;
+          display: flex;
+        }
+
+        .topContainer {
+          height: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          top: 0;
+        }
+
+        .mainHeading {
+          padding-bottom: 5vh;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navBarFlex {
+    padding: $base-spacing $base-spacing * 3;
+    .nutrientsFlex {
+      .mainHeading {
+        padding-top: $base-spacing * 4;
+        padding-bottom: 5vh;
+        text-align: left;
+      }
+    }
+  }
+}

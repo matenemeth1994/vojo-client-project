@@ -1,0 +1,28 @@
+.mealList {
+  list-style-type: none;
+  width: 100%;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.mealList .dash {
+  color: #ef7d40;
+}
+
+.mealList .belowDash {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 764px) {
+  .mealList {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mealList {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=MealIdeasBottom.module.css.map */

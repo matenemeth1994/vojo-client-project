@@ -1,0 +1,37 @@
+.infoList {
+  width: 90%;
+  margin: 8px;
+}
+
+.infoList p {
+  margin: 8px 0 32px 0;
+  font-size: 12px;
+}
+
+.infoList h4 span {
+  margin: 16px 0 8px 0;
+  font-weight: 700;
+}
+
+.infoList .blackText {
+  color: #000;
+}
+
+.infoList .purpleText {
+  color: #b44370;
+}
+
+@media only screen and (min-width: 768px) {
+  .infoList p {
+    font-size: 14px;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .infoList p {
+    font-size: 16px;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=InfoList.module.css.map */

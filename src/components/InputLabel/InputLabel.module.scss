@@ -1,0 +1,14 @@
+@import "..//../variables.scss";
+
+.label {
+  font-size: 16px;
+  margin-bottom: $base-spacing;
+
+  &.primary {
+    color: $vojo-brown;
+  }
+
+  &.secondary {
+    color: $standard-text;
+  }
+}

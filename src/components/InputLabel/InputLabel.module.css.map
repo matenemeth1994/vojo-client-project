@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACL,SAAS,EAAE,IAAI;EACf,aAAa,ECiFA,GAAG;CDxEjB;;AAXD,AAIE,MAJI,AAIH,QAAQ,CAAC;EACR,KAAK,ECKI,OAAO;CDJjB;;AANH,AAQE,MARI,AAQH,UAAU,CAAC;EACV,KAAK,ECRO,IAAI;CDSjB",
+    "sources": [
+        "InputLabel.module.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "InputLabel.module.css"
+}

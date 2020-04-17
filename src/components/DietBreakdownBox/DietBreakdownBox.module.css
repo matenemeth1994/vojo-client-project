@@ -1,0 +1,109 @@
+.breakdownBox1 {
+  height: 100%;
+  width: 100%;
+}
+
+.breakdownBox1 .textBorder {
+  margin: auto;
+  height: 5%;
+  width: 60%;
+  border-top: 2px solid #cc9a63;
+  border-left: 2px solid #cc9a63;
+  border-right: 2px solid #cc9a63;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.breakdownBox1 .textBorder p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -15px;
+  background: #f2e4d0;
+  white-space: pre-wrap;
+}
+
+.breakdownBox1 .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 60%;
+}
+
+.breakdownBox1 .imgs .primary {
+  height: 100%;
+  width: 100%;
+  margin: 4px;
+}
+
+.breakdownBox1 .vegBrief {
+  height: 10%;
+  width: 80%;
+  text-align: center;
+  margin: 8px auto;
+  white-space: pre-wrap;
+}
+
+@media only screen and (min-width: 425px) {
+  .breakdownBox1 {
+    overflow: hidden;
+  }
+  .breakdownBox1 .imgs {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .breakdownBox1 .textBorder {
+    margin-top: 24px;
+  }
+  .breakdownBox1 .textBorder p {
+    margin-top: -25px;
+  }
+  .breakdownBox1 .imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 30%;
+  }
+  .breakdownBox1 .imgs .primary {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .breakdownBox1 .textBorder {
+    width: 70%;
+  }
+  .breakdownBox1 .textBorder .imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 20%;
+  }
+  .breakdownBox1 .textBorder .imgs .primary {
+    height: 100%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=DietBreakdownBox.module.css.map */

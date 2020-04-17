@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.nutrientInfo {
+  margin-top: $base-spacing * 8;
+  padding: $base-spacing * 4;
+
+  .bold {
+    font-weight: 600;
+  }
+
+  h2,
+  .intakeValue,
+  p {
+    padding: $base-spacing 0;
+    line-height: 1.25;
+  }
+
+  .sliderContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .slider {
+      margin: $base-spacing * 5 0;
+      width: 80%;
+      height: 10px;
+    }
+  }
+}
+
+.red {
+  h2,
+  .intakeValue {
+    color: $warning;
+  }
+}
+
+.orange {
+  h2,
+  .intakeValue {
+    color: $vojo-orange;
+  }
+}
+
+.yellow {
+  h2,
+  .intakeValue {
+    color: $neutral;
+  }
+}
+
+.green {
+  h2,
+  .intakeValue {
+    color: $sucessful;
+  }
+}

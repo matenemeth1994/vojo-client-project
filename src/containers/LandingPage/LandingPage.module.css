@@ -1,0 +1,472 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.landingPage .navBar {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  padding: 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f2e9;
+}
+
+.landingPage .navBar .burgs {
+  display: none;
+  height: 100%;
+  max-height: 55px;
+  margin-top: 5px;
+}
+
+.landingPage .navBar img {
+  height: 100%;
+  max-height: 55px;
+}
+
+.landingPage .navBar .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+
+.landingPage .navBar .navLinks a {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.landingPage .navBar .navLinks .authLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage .navBar .navLinks .authLinks p {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #b44370;
+  margin: 0;
+}
+
+.landingPage section {
+  height: 90vh;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.landingPage section h2 {
+  width: 400px;
+  font-size: 48px;
+  line-height: initial;
+}
+
+.landingPage section article {
+  width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landingPage section .bold {
+  font-weight: bold;
+}
+
+.landingPage section .button {
+  height: 40px;
+  width: 250px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.landingPage section .button :hover {
+  cursor: pointer;
+}
+
+.landingPage section.veganMojo {
+  scroll-behavior: smooth;
+  height: 100vh;
+  background-color: #f2e4d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.veganMojo img {
+  height: 65vh;
+}
+
+.landingPage section.veganMojo article {
+  height: 370px;
+}
+
+.landingPage section.shouldVojo {
+  height: 100vh;
+  background-color: #f8f2e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.shouldVojo img {
+  height: 80vh;
+}
+
+.landingPage section.shouldVojo article {
+  height: 80vh;
+}
+
+.landingPage section.shouldVojo article p {
+  padding: 5px;
+}
+
+.landingPage section.howItWorks {
+  height: 100vh;
+  background-color: #f2e4d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.howItWorks .howItWorksTitles {
+  padding-top: 20px;
+  height: 180px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landingPage section.howItWorks img {
+  height: 20vh;
+}
+
+.landingPage section.howItWorks .imageList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.howItWorks .imageList div {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.howItWorks .imageList div h2 {
+  width: initial;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.landingPage section.howItWorks .imageList div h3 {
+  text-align: center;
+  width: 150px;
+}
+
+.landingPage section.price {
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #f8f2e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage section.price img {
+  height: 65vh;
+}
+
+.landingPage section.price span {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.landingPage section.price article {
+  height: 450px;
+}
+
+.landingPage section.price article li {
+  list-style-type: none;
+}
+
+.landingPage section.price a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #b44370;
+  font-size: 20px;
+}
+
+.landingPage footer {
+  height: 10vh;
+  width: 100%;
+  padding: 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b44370;
+}
+
+.landingPage footer img {
+  height: 100%;
+  max-height: 55px;
+}
+
+.landingPage footer .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+
+.landingPage footer .navLinks a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .landingPage .marginTop {
+    margin-top: 24px;
+  }
+  .landingPage .navBar {
+    height: 60px;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .landingPage .navBar .burgs {
+    display: unset;
+    height: 100%;
+    max-height: 40px;
+    width: 100%;
+    max-width: 40px;
+  }
+  .landingPage .navBar .navLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f8f2e9;
+    height: 100vh;
+    text-align: center;
+  }
+  .landingPage .navBar .display {
+    display: none;
+  }
+  .landingPage .openNav {
+    height: 100vh;
+  }
+  .landingPage section {
+    padding: 70px 30px;
+    height: initial;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .landingPage section h2 {
+    width: unset;
+    font-size: 32px;
+  }
+  .landingPage section article {
+    width: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landingPage section.veganMojo {
+    height: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landingPage section.veganMojo img {
+    height: 30vh;
+  }
+  .landingPage section.shouldVojo {
+    height: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landingPage section.shouldVojo img {
+    height: 30vh;
+  }
+  .landingPage section.shouldVojo article {
+    height: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landingPage section.shouldVojo article p {
+    margin: 10px 0;
+  }
+  .landingPage section.howItWorks {
+    height: initial;
+  }
+  .landingPage section.howItWorks .imageList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+  .landingPage section.howItWorks .imageList div {
+    background-color: #f8f2e9;
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+  .landingPage section.price {
+    height: initial;
+  }
+  .landingPage section.price span {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+  }
+  .landingPage section.price span img {
+    height: 30vh;
+    max-height: 200px;
+  }
+  .landingPage footer {
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .landingPage footer img {
+    display: none;
+  }
+  .landingPage footer .navLinks {
+    height: inherit;
+    width: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=LandingPage.module.css.map */

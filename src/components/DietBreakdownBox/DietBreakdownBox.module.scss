@@ -1,0 +1,102 @@
+@import "../../variables.scss";
+
+.breakdownBox1 {
+  height: 100%;
+  width: 100%;
+
+  .textBorder {
+    margin: auto;
+    height: 5%;
+    width: 60%;
+    border-top: 2px solid #cc9a63;
+    border-left: 2px solid #cc9a63;
+    border-right: 2px solid #cc9a63;
+    text-align: center;
+    margin-top: $base-spacing * 2;
+
+    p {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: -15px;
+      background: $primary-background ;
+      white-space: pre-wrap;
+    }
+  }
+
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 60%;
+
+    .primary {
+      height: 100%;
+      width: 100%;
+      margin: $base-spacing / 2;
+    }
+  }
+
+  .vegBrief {
+    height: 10%;
+    width: 80%;
+    text-align: center;
+    margin: $base-spacing auto;
+    white-space: pre-wrap;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .breakdownBox1 {
+    overflow: hidden;
+
+    .imgs {
+      width: 80%;
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .breakdownBox1 {
+    .textBorder {
+      margin-top: $base-spacing * 3;
+
+      p {
+        margin-top: -25px;
+      }
+    }
+    .imgs {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 30%;
+
+      .primary {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .breakdownBox1 {
+    .textBorder {
+      width: 70%;
+
+      .imgs {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+
+        .primary {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

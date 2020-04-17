@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+
+.dietType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 300vh;
+  margin: auto;
+  vertical-align: center;
+
+  .dietTextBox {
+    height: 100%;
+    margin: $base-spacing * 2;
+    padding: $base-spacing * 2;
+
+    .header {
+      color: $secondary-color;
+    }
+
+    .region {
+      color: $primary-color;
+    }
+
+    p {
+      padding: $base-spacing 0;
+    }
+  }
+
+  .vegbox {
+    height: 100%;
+    margin: $base-spacing * 2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .dietType {
+    flex-direction: row;
+    height: 60vh;
+    margin: 25vh auto;
+
+    .dietTextBox {
+      width: 30%;
+      margin: 0 $base-spacing;
+    }
+
+    .vegbox {
+      height: 100%;
+      width: 30%;
+      margin: 0 $base-spacing;
+    }
+  }
+}

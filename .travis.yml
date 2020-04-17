@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 10
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn global add firebase-tools
+  - yarn install
+script:
+  - yarn test
+  - yarn build
+before_deploy:
+  - yarn build
+branches:
+  only:
+    - master
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: dya9tHuK1Ku0t6bxYkpHUsvmRRBXXkL9RqR6VNxSSr0dywkkQSCjEkgw/f/wMLXF/eRauuWoW11MBwbLGCjaZYQfSs5op+vN4or9iEKTwW8IxlvTiO7nUHalExlRKbYV3mheg1SD4PYhE+DeOcyeaaG2RiBa6pw5ZgsbL+BphT5Vx9lPcap+uGxzpR1NgI1VBfy+jogrFgJy3RiIWz6s9OwAgFaTDe37gJ5utc91skCAa1F+Z9nvN1zglssXWKsZmJg1Cqk6asoK69p/EuRR5sTfv2q81iPteyxzC7O7WTDFusdKkBwX41sh7gjDRMEz3sP2kLxuZ6UWIrOg/bWthmTGxsY3S+y6JgAdPgETcQiIVPHw+KEvkPLO8rOuReWV5q4Su/34ywb+mPrS1B9KN9NsZg4WNaXPacvZ6IZoghAXgJjAX9n7NhkXDCmxRUu9BWxy7U0UPzhWBUGPn3UVoEHL9PNFc0KyAcX97neCsLtjN/FUva928AyajCw8kLzt0Cxg+SRLSeO8A1751q68wN4lZK4rP99EdPARXJBVDsmiqRHDSWsr0o8jyWpwhamfW+kG9WR8xsSoJB222iMnaRxW7USGd4wuoN9Uiq7VbnzIBr5sxwdcJwY81SD2Cy05mRQWHlU07k+mmYV6di8nwrzC1EdDCehNOrVYp8kJY2c=

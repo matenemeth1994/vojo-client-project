@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.showPanel {
+  position: absolute;
+  z-index: 2;
+}
+
+.card {
+  border: 2px solid $warning;
+  border-radius: 8px;
+  padding: $base-spacing * 2;
+  background-color: $warning-shade;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 320px;
+  flex: 0 0 auto;
+  margin: $base-spacing;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  h3 {
+    margin: $base-spacing 0;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: $base-spacing 0;
+    padding: 0;
+  }
+
+  p {
+    line-height: 22px;
+  }
+
+  .link {
+    margin-top: $base-spacing;
+    text-decoration: underline;
+  }
+
+  &.orange {
+    border: 2px solid $raised-warning;
+    background-color: $raised-warning-shade;
+  }
+
+  &.yellow {
+    border: 2px solid $neutral;
+    background-color: $neutral-shade;
+  }
+
+  &.green {
+    border: 2px solid $sucessful;
+    background-color: $sucessful-shade;
+  }
+}

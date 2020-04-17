@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.priorityBoxCont {
+  height: 100%;
+  width: 100%;
+  padding: $base-spacing * 2;
+  border: 1px solid #f2e4d0;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+
+  div {
+    p {
+      margin-bottom: $base-spacing * 2;
+    }
+  }
+
+  a {
+    color: $sucessful;
+  }
+
+  h4 {
+    margin: $base-spacing * 2 0 $base-spacing;
+  }
+
+  .prioNum {
+    background-image: url("../../assets/graphic-devices/light-green-circle-1.svg"),
+      linear-gradient($sucessful, $sucessful);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 28px;
+    }
+  }
+
+  .checkBox {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+
+    div {
+      width: 40px;
+      height: 20px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .prioLink {
+    width: auto;
+  }
+}

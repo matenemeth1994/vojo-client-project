@@ -1,0 +1,60 @@
+.dietType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 300vh;
+  margin: auto;
+  vertical-align: center;
+}
+
+.dietType .dietTextBox {
+  height: 100%;
+  margin: 16px;
+  padding: 16px;
+}
+
+.dietType .dietTextBox .header {
+  color: #5567ae;
+}
+
+.dietType .dietTextBox .region {
+  color: #b44370;
+}
+
+.dietType .dietTextBox p {
+  padding: 8px 0;
+}
+
+.dietType .vegbox {
+  height: 100%;
+  margin: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dietType {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60vh;
+    margin: 25vh auto;
+  }
+  .dietType .dietTextBox {
+    width: 30%;
+    margin: 0 8px;
+  }
+  .dietType .vegbox {
+    height: 100%;
+    width: 30%;
+    margin: 0 8px;
+  }
+}
+/*# sourceMappingURL=DietType.module.css.map */

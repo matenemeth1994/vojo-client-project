@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.mealList {
+  list-style-type: none;
+  width: 100%;
+  font-weight: 300;
+  padding-bottom: $base-spacing;
+  font-size: 12px;
+}
+
+.mealHeader {
+  color: $standard-text;
+  font-size: 12px;
+  padding-bottom: $base-spacing * 2;
+}
+
+@media only screen and (min-width: 764px) {
+  .mealList {
+    font-size: 14px;
+  }
+  .mealHeader {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mealList {
+    font-size: 18px;
+  }
+  .mealHeader {
+    font-size: 18px;
+  }
+}

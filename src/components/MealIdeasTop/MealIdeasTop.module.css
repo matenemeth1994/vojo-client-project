@@ -1,0 +1,32 @@
+.mealList {
+  list-style-type: none;
+  width: 100%;
+  font-weight: 300;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+
+.mealHeader {
+  color: #000;
+  font-size: 12px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 764px) {
+  .mealList {
+    font-size: 14px;
+  }
+  .mealHeader {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mealList {
+    font-size: 18px;
+  }
+  .mealHeader {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=MealIdeasTop.module.css.map */

@@ -1,0 +1,51 @@
+.mealIdeas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 8px 0 8px;
+}
+
+.mealIdeas .dietContainer {
+  margin: 8px;
+  width: 40%;
+  height: 50vh;
+}
+
+.mealHeader {
+  color: #5567ae;
+  margin-left: 16px;
+}
+
+@media only screen and (min-width: 764px) {
+  .dietContainer {
+    margin: 8px 32px 8px 32px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 20%;
+  }
+  .mealIdeas {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 100vh;
+  }
+  .mealHeader {
+    margin: 16px 0 16px 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .dietContainer {
+    margin: 8px 48px 8px 48px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mealIdeas {
+    height: 100vh;
+  }
+  .mealHeader {
+    margin: 16px 0 16px 16px;
+  }
+}
+/*# sourceMappingURL=MealIdeas.module.css.map */

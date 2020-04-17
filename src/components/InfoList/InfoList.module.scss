@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+
+.infoList {
+  width: 90%;
+  margin: $base-spacing;
+
+  p {
+    margin: $base-spacing 0 $base-spacing * 4 0;
+    font-size: 12px;
+  }
+
+  h4 span {
+    margin: $base-spacing * 2 0 $base-spacing 0;
+    font-weight: 700;
+  }
+
+  .blackText {
+    color: $standard-text;
+  }
+
+  .purpleText {
+    color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .infoList p {
+    font-size: 14px;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .infoList p {
+    font-size: 16px;
+    width: 50%;
+  }
+}

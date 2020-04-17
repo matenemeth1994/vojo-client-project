@@ -1,0 +1,232 @@
+.page {
+  position: relative;
+  background-color: #f2e4d0;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.page .box {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 30%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .box .button {
+  margin: 32px auto;
+  height: 50px;
+  width: 100px;
+}
+
+.page .box .button :hover {
+  cursor: pointer;
+}
+
+.page .box > section {
+  margin-bottom: 24px;
+}
+
+.page .box h2 {
+  color: #5567ae;
+  margin-bottom: 16px;
+}
+
+.page .box .inputFieldContainer {
+  height: 35px;
+}
+
+.page .box .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f2e4d0;
+  border-bottom: solid 2px #b44370;
+}
+
+.page .box .displayError {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  height: 30vh;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 2px solid red;
+  padding: 24px;
+  font-size: calc(16px + (22 - 16) * ((100vw - 440px) / (1920 - 440)));
+}
+
+.page .box .displayError h4 {
+  margin: 8px;
+}
+
+.page .box .displayError .btn {
+  width: 100px;
+  height: 40px;
+  margin-top: 24px;
+}
+
+.page .box .displayError .btn :hover {
+  cursor: pointer;
+}
+
+.page .box .loadingBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page .box .loadingBox .loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  margin: 8px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.questionPerson {
+  display: none;
+  position: absolute;
+  right: 20%;
+  bottom: 30px;
+  height: 200px;
+  width: 100px;
+}
+
+.leftArrow {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  width: 60px;
+  height: 60px;
+}
+
+.rightArrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (min-width: 764px) {
+  .page {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page .questionPerson {
+    display: unset;
+  }
+  .page .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page .box .displayError {
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 24px;
+    font-size: calc(16px + (22 - 16) * ((100vw - 440px) / (1920 - 440)));
+  }
+  .page .box .arrows {
+    position: static;
+    border-bottom: none;
+  }
+  .page .box .leftArrow {
+    position: absolute;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    left: 60px;
+    top: calc(50vh - 30px);
+  }
+  .page .box .rightArrow {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 60px;
+    top: calc(50vh - 30px);
+  }
+}
+/*# sourceMappingURL=PageThirtyFour.module.css.map */

@@ -1,0 +1,173 @@
+@import "../../variables.scss";
+
+.selected {
+  color: blue;
+}
+p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  :hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: black;
+}
+
+.navMargin {
+  z-index: 99;
+  position: fixed;
+  height: $base-spacing * 9;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: $primary-background;
+}
+
+.navBar {
+  z-index: 100;
+  background-color: $vojo-cream;
+  position: fixed;
+  left: $base-spacing * 2;
+  top: $base-spacing * 2;
+  @include flex-column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100vw - 32px);
+  transition: 0.5s;
+  .navTop {
+    width: 100%;
+  }
+
+  .logoBurgerFlex {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $base-spacing;
+
+    .navBarLogo {
+      width: 48px;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+
+    .burgerMenu {
+      border: none;
+      width: $base-spacing * 3;
+      height: $base-spacing * 5;
+      background-size: contain;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      outline: none;
+      margin: 0 12px;
+    }
+
+    .burgerMenuIcon {
+      background-image: url("../../assets/graphic-devices/blue-burger-menu.svg");
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .burgerMenuCross {
+      background-image: url("../../assets/graphic-devices/blue-cross.svg");
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+
+  .links {
+    @include flex-column;
+    color: #3c3934;
+    height: 55vh;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+    z-index: 0;
+
+    &.display {
+      display: none;
+    }
+
+    .navLine {
+      width: $base-spacing * 8;
+      height: $base-spacing / 2;
+      background-image: url("../../assets/graphic-devices/secondary-col-nav-line.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .navBottom {
+    // height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: $base-spacing * 2;
+    opacity: 1;
+    transition: 1s;
+
+    &.display {
+      display: none;
+    }
+
+    button {
+      padding: 0 10px;
+      font-weight: bold;
+    }
+
+    * {
+      margin: $base-spacing / 2 0;
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navMargin {
+    height: calc(100vh - 32px);
+    min-width: 186px;
+    width: 186px;
+    position: unset;
+  }
+
+  .navBar {
+    height: "calc(100vh - 32px)";
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    transition: 0s;
+    .logoBurgerFlex {
+      justify-content: center;
+      padding-bottom: $base-spacing * 4;
+    }
+    .links {
+      transition: 0s;
+    }
+  }
+
+  .bugerMenuIcon,
+  .burgerMenuCross {
+    display: none;
+  }
+}

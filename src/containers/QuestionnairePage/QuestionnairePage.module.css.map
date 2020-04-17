@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,gBAAgB,ECIG,OAAO;CDH3B",
+    "sources": [
+        "QuestionnairePage.module.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "QuestionnairePage.module.css"
+}

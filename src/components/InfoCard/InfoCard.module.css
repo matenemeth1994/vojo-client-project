@@ -1,0 +1,65 @@
+.showPanel {
+  position: absolute;
+  z-index: 2;
+}
+
+.card {
+  border: 2px solid #e94842;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9d1cf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 320px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 8px;
+}
+
+.card :hover {
+  cursor: pointer;
+}
+
+.card h3 {
+  margin: 8px 0;
+}
+
+.card h2 {
+  font-size: 28px;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.card p {
+  line-height: 22px;
+}
+
+.card .link {
+  margin-top: 8px;
+  text-decoration: underline;
+}
+
+.card.orange {
+  border: 2px solid #ef7d40;
+  background-color: #fbdecf;
+}
+
+.card.yellow {
+  border: 2px solid #efbd3f;
+  background-color: #fbeecf;
+}
+
+.card.green {
+  border: 2px solid #82a44d;
+  background-color: #dfe8d2;
+}
+/*# sourceMappingURL=InfoCard.module.css.map */

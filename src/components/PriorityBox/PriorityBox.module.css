@@ -1,0 +1,91 @@
+.priorityBoxCont {
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #f2e4d0;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.priorityBoxCont div p {
+  margin-bottom: 16px;
+}
+
+.priorityBoxCont a {
+  color: #82a44d;
+}
+
+.priorityBoxCont h4 {
+  margin: 16px 0 8px;
+}
+
+.priorityBoxCont .prioNum {
+  background-image: url("../../assets/graphic-devices/light-green-circle-1.svg"), -webkit-gradient(linear, left top, left bottom, from(#82a44d), to(#82a44d));
+  background-image: url("../../assets/graphic-devices/light-green-circle-1.svg"), linear-gradient(#82a44d, #82a44d);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.priorityBoxCont .prioNum img {
+  width: 100%;
+  height: 100%;
+}
+
+.priorityBoxCont .prioNum p {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+}
+
+.priorityBoxCont .checkBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+.priorityBoxCont .checkBox div {
+  width: 40px;
+  height: 20px;
+}
+
+.priorityBoxCont .checkBox p {
+  margin-bottom: 0;
+}
+
+.priorityBoxCont .prioLink {
+  width: auto;
+}
+/*# sourceMappingURL=PriorityBox.module.css.map */

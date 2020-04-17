@@ -1,0 +1,52 @@
+.nutrientInfo {
+  margin-top: 64px;
+  padding: 32px;
+}
+
+.nutrientInfo .bold {
+  font-weight: 600;
+}
+
+.nutrientInfo h2,
+.nutrientInfo .intakeValue,
+.nutrientInfo p {
+  padding: 8px 0;
+  line-height: 1.25;
+}
+
+.nutrientInfo .sliderContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nutrientInfo .sliderContainer .slider {
+  margin: 40px 0;
+  width: 80%;
+  height: 10px;
+}
+
+.red h2,
+.red .intakeValue {
+  color: #e94842;
+}
+
+.orange h2,
+.orange .intakeValue {
+  color: #ef7d40;
+}
+
+.yellow h2,
+.yellow .intakeValue {
+  color: #efbd3f;
+}
+
+.green h2,
+.green .intakeValue {
+  color: #82a44d;
+}
+/*# sourceMappingURL=NutrientsInfo.module.css.map */

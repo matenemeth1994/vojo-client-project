@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.warningMessage {
+  background-color: $neutral;
+  border-radius: $base-spacing;
+  padding: $base-spacing * 2;
+
+  div {
+    @include flex-column;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: $base-spacing;
+
+    p {
+      text-decoration: underline;
+      margin-bottom: $base-spacing;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .warningMessage {
+    background-color: $neutral;
+    border-radius: $base-spacing;
+    padding: $base-spacing * 2;
+
+    div {
+      @include flex-row;
+      justify-content: space-between;
+      padding-right: $base-spacing;
+
+      p {
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

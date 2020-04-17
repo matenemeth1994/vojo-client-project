@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAA,QAAQ,CAAC;EAEP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,MAAM;EACrB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CAcZ;;AApBD,AAQE,QARM,CAQN,KAAK,CAAA;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,YAAY;CAM9B;;AAjBH,AAaI,QAbI,CAQN,KAAK,CAKH,QAAQ,CAAC;EACP,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "DietVeg.module.scss"
+    ],
+    "names": [],
+    "file": "DietVeg.module.css"
+}

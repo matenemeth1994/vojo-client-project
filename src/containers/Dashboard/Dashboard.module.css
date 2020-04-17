@@ -1,0 +1,418 @@
+.entirePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+}
+
+.entirePage .mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entirePage .mainPage section {
+  width: 100%;
+}
+
+.entirePage .mainPage section h3 {
+  color: #ef7d40;
+  font-size: 22px;
+  padding: 8px 0;
+}
+
+.entirePage .mainPage section .topCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.entirePage .mainPage section .topCont h2 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.entirePage .mainPage section .topCont .healthScore {
+  margin-top: 32px;
+  background-color: #82a44d;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entirePage .mainPage section .topCont .healthScore .healthScoreData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+
+.entirePage .mainPage section .topCont .healthScore .healthScoreData p {
+  width: 100px;
+}
+
+.entirePage .mainPage section .topCont .healthScore .healthScoreData h2 {
+  font-size: 48px;
+}
+
+.entirePage .mainPage section .topCont .healthScore .healthScoreData span {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.entirePage .mainPage section .topCont .healthScore .improveHealthScore {
+  margin: 8px 0 0 0;
+  background-color: white;
+  color: #82a44d;
+  text-align: center;
+  width: 250px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.entirePage .mainPage section .topCont .healthScore .improveHealthScore:hover {
+  cursor: pointer;
+}
+
+.entirePage .mainPage section .planOfAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entirePage .mainPage section .planOfAction img {
+  position: relative;
+  z-index: 1;
+  width: 70px;
+  top: 15px;
+}
+
+.entirePage .mainPage section .dietPlan h3 {
+  margin-top: 24px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox {
+  border-radius: 8px;
+  background-color: #fbf8f3;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox button {
+  margin-top: 16px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox button:hover {
+  cursor: pointer;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox ol,
+.entirePage .mainPage section .dietPlan div .mojoBox ul {
+  margin-left: 16px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox ol li,
+.entirePage .mainPage section .dietPlan div .mojoBox ul li {
+  padding-top: 16px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox ol li p,
+.entirePage .mainPage section .dietPlan div .mojoBox ul li p {
+  padding-top: 4px;
+  font-size: 13px;
+}
+
+.entirePage .mainPage section .dietPlan div .mojoBox p {
+  font-weight: normal;
+  padding: 0;
+}
+
+.entirePage .mainPage section .dietPlan div .dietType {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.entirePage .mainPage section .dietPlan div .dietType img {
+  width: 110px;
+  margin-bottom: 8px;
+}
+
+.entirePage .mainPage section .dietPlan div .dietType p {
+  margin-bottom: 8px;
+}
+
+.entirePage .mainPage section .dietPlan div .dietType h4 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.entirePage .mainPage section .whereToNext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entirePage .mainPage section .whereToNext img {
+  position: relative;
+  z-index: 1;
+  width: 70px;
+  top: 8px;
+}
+
+.entirePage .mainPage section .whereToContainer .whereNextBox {
+  width: 100%;
+  height: 100px;
+  background-color: #b44370;
+  padding: 16px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entirePage .mainPage section .whereToContainer .whereNextBox .whereToArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 16px;
+}
+
+.entirePage .mainPage section .whereToContainer .whereNextBox .whereToArrow img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 13px;
+}
+
+.entirePage .mainPage section .whereToContainer .whereNextBox .whereToArrow img:hover {
+  cursor: pointer;
+}
+
+.entirePage .mainPage section .prioBox {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 375px) {
+  .entirePage .mainPage section .topCont .healthScore .healthScoreData p,
+  .entirePage .mainPage section .topCont .healthScore .healthScoreData span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .entirePage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .entirePage .mainPage {
+    width: 100%;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .entirePage .mainPage section .topCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .entirePage .mainPage section .topCont .healthScore {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .entirePage .mainPage section .topCont .healthScore .healthScoreData {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .entirePage .mainPage section .topCont .healthScore .healthScoreData h2,
+  .entirePage .mainPage section .topCont .healthScore .healthScoreData span {
+    padding-left: 8px;
+  }
+  .entirePage .mainPage section .topCont .healthScore .improveHealthScore {
+    margin: 8px;
+  }
+  .entirePage .mainPage section .prioBoxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage section .prioBoxes .prioBox {
+    width: 30%;
+  }
+  .entirePage .mainPage section .whereToSection .whereToContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage section .whereToSection .whereToContainer .whereNextBox {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .entirePage .mainPage section .topCont {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .entirePage .mainPage section .topCont .healthScore {
+    width: 600px;
+    margin: 0;
+  }
+  .entirePage .mainPage section .dietPlan .dietPlanBoxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage section .dietPlan .dietPlanBoxes .mojoBox {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage section .dietPlan .dietPlanBoxes .mojoBox .dietPlanLink {
+    width: 100%;
+  }
+  .entirePage .mainPage section .dietPlan .dietPlanBoxes .mojoBox .dietPlanLink:hover {
+    cursor: pointer;
+  }
+  .entirePage .mainPage section .dietPlan .dietPlanBoxes .mojoBox .dietPlanLink button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Dashboard.module.css.map */

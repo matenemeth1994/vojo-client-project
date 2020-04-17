@@ -1,0 +1,98 @@
+$primary-color: rgb(180, 67, 112);
+$secondary-color: #5567ae;
+
+$standard-text: #000;
+$dark-green-text: #202913;
+$dark-red-text: #3a1210;
+
+$primary-background: #f2e4d0;
+$secondary-background: #fbf8f3;
+
+$light-berry-blue: #d4d9ea;
+
+$vojo-brown: #202020;
+$vojo-orange: #ef7d40;
+$vojo-cream: #f8f2e9;
+
+//border-outlines and used for some subheadings
+$warning: #e94842;
+$sucessful: #82a44d;
+$raised-warning: #ef7d40;
+$neutral: #efbd3f;
+
+//box fillers
+$warning-shade: #f9d1cf;
+$sucessful-shade: #dfe8d2;
+$raised-warning-shade: #fbdecf;
+$neutral-shade: #fbeecf;
+$light-brown: #f2e5d8;
+
+//shades 80%
+$primary-color-80: #b44370cc;
+$secondary-color-80: #5567aecc;
+
+$standard-text-80: #000000cc;
+
+$primary-background-80: #f2e4d0cc;
+$secondary-background-80: #ffffffcc;
+
+$vojo-orange-80: #ef7c3ecc;
+$vojo-brown-80: #cc9a63cc;
+
+$warning-80: #e94842cc;
+$sucessful-80: #82a44dcc;
+$neutral-80: #efbd3fcc;
+
+//shades 60%
+$primary-color-60: #b4437099;
+$secondary-color-60: #5567ae99;
+
+$standard-text-60: #00000099;
+
+$primary-background-60: #f2e4d099;
+$secondary-background-60: #ffffff99;
+
+$vojo-brown-60: #cc9a6399;
+$vojo-orange-60: #ef7d4099;
+
+$warning-60: #e9484299;
+$sucessful-60: #82a44d99;
+$neutral-60: #efbd3f99;
+
+$warning-shade-60: #f9d1cf99;
+$sucessful-shade-60: #dfe8d299;
+$neutral-shade-60: #fbeecf99;
+
+//shades 40%
+$primary-color-40: #b4437066;
+$secondary-color-40: #5567ae66;
+
+$standard-text-40: #00000066;
+
+$primary-background-40: #f2e4d066;
+$secondary-background-40: #ffffff66;
+
+$vojo-brown-40: #cc9a6366;
+$vojo-orange-40: #ef7d4066;
+
+$warning-40: #e9484266;
+$sucessful-40: #82a44d66;
+$neutral-40: #efbd3f66;
+
+$warning-shade-40: #f9d1cf66;
+$sucessful-shade-40: #dfe8d266;
+$neutral-shade-40: #fbeecf66;
+
+$base-spacing: 8px;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+$heading-2-size: $base-spacing * 6;

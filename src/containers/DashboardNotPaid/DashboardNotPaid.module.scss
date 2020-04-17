@@ -1,0 +1,170 @@
+@import "../../variables.scss";
+
+.entirePage {
+  @include flex-column;
+  padding: $base-spacing * 2;
+
+  .mainPage {
+    width: 100%;
+    @include flex-column;
+    align-items: center;
+
+    h2 {
+      padding-top: $base-spacing * 2;
+      font-size: 48px;
+    }
+
+    section {
+      width: 100%;
+    }
+
+    .toDoNext {
+      margin-top: $base-spacing * 4;
+      background-color: $neutral;
+      border-radius: $base-spacing;
+      padding: $base-spacing * 2;
+      margin-bottom: $base-spacing * 2;
+
+      p {
+        // text-decoration: underline;
+        margin-bottom: $base-spacing;
+      }
+
+      li {
+        list-style-position: inside;
+        padding-left: $base-spacing * 2;
+      }
+    }
+
+    .stepTwo,
+    .stepThree {
+      opacity: 0.5;
+    }
+
+    .nextSteps {
+      background-color: $vojo-cream;
+      border-radius: $base-spacing;
+      padding: $base-spacing * 2;
+      margin-bottom: $base-spacing * 2;
+
+      h3 {
+        padding-bottom: $base-spacing * 2;
+        font-size: 1em;
+      }
+
+      p {
+        margin-bottom: $base-spacing;
+        font-weight: normal;
+      }
+    }
+
+    .fruitPeople {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: $base-spacing * 3;
+      max-width: 100%;
+
+      img {
+        height: 40px;
+        width: 50px;
+      }
+
+      .beetRoot {
+        height: 90px;
+        width: 70px;
+      }
+
+      .banana {
+        margin-left: $base-spacing;
+        height: 40px;
+        width: 80px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .entirePage {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .mainPage {
+      margin: 0 $base-spacing $base-spacing * 2 $base-spacing;
+
+      .fruitPeople {
+        img {
+          height: 60px;
+          width: 70px;
+        }
+
+        .beetRoot {
+          height: 110px;
+          width: 90px;
+        }
+
+        .banana {
+          margin-left: $base-spacing;
+          height: 50px;
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .entirePage {
+    flex-direction: row;
+    .mainPage {
+      .responsiveNextSteps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .nextSteps {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          background-color: $vojo-cream;
+          border-radius: $base-spacing;
+          padding: $base-spacing * 2;
+          margin-top: $base-spacing * 2;
+          margin-bottom: $base-spacing * 2;
+          width: 30%;
+
+          h3 {
+            padding-bottom: $base-spacing * 2;
+            font-size: 1em;
+          }
+
+          p {
+            margin-bottom: $base-spacing;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .fruitPeople {
+        justify-content: space-between;
+
+        padding: $base-spacing * 2;
+        img {
+          height: 100px;
+          width: 150px;
+        }
+
+        .beetRoot {
+          height: 170px;
+          width: 120px;
+        }
+
+        .banana {
+          margin-left: $base-spacing;
+          height: 60px;
+          width: 140px;
+        }
+      }
+    }
+  }
+}

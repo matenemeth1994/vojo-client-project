@@ -1,0 +1,9 @@
+@import "../../variables.scss";
+
+.logo {
+  position: absolute;
+  top: $base-spacing * 3;
+  left: $base-spacing * 3;
+  width: 70px;
+  height: 70px;
+}

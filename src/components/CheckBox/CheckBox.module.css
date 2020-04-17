@@ -1,0 +1,48 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: solid 2px #5567ae;
+  border-radius: 5px;
+}
+
+.container .checkmark:after {
+  content: url(../../assets/graphic-devices/primary-color-straw.svg);
+  position: absolute;
+  display: none;
+  left: 10px;
+  bottom: 5px;
+  width: 15px;
+  height: 30px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) scaleY(-1);
+}
+/*# sourceMappingURL=CheckBox.module.css.map */

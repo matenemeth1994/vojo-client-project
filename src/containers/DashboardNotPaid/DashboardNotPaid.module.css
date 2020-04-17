@@ -1,0 +1,197 @@
+.entirePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+}
+
+.entirePage .mainPage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entirePage .mainPage h2 {
+  padding-top: 16px;
+  font-size: 48px;
+}
+
+.entirePage .mainPage section {
+  width: 100%;
+}
+
+.entirePage .mainPage .toDoNext {
+  margin-top: 32px;
+  background-color: #efbd3f;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.entirePage .mainPage .toDoNext p {
+  margin-bottom: 8px;
+}
+
+.entirePage .mainPage .toDoNext li {
+  list-style-position: inside;
+  padding-left: 16px;
+}
+
+.entirePage .mainPage .stepTwo,
+.entirePage .mainPage .stepThree {
+  opacity: 0.5;
+}
+
+.entirePage .mainPage .nextSteps {
+  background-color: #f8f2e9;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.entirePage .mainPage .nextSteps h3 {
+  padding-bottom: 16px;
+  font-size: 1em;
+}
+
+.entirePage .mainPage .nextSteps p {
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.entirePage .mainPage .fruitPeople {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 24px;
+  max-width: 100%;
+}
+
+.entirePage .mainPage .fruitPeople img {
+  height: 40px;
+  width: 50px;
+}
+
+.entirePage .mainPage .fruitPeople .beetRoot {
+  height: 90px;
+  width: 70px;
+}
+
+.entirePage .mainPage .fruitPeople .banana {
+  margin-left: 8px;
+  height: 40px;
+  width: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .entirePage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage {
+    margin: 0 8px 16px 8px;
+  }
+  .entirePage .mainPage .fruitPeople img {
+    height: 60px;
+    width: 70px;
+  }
+  .entirePage .mainPage .fruitPeople .beetRoot {
+    height: 110px;
+    width: 90px;
+  }
+  .entirePage .mainPage .fruitPeople .banana {
+    margin-left: 8px;
+    height: 50px;
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .entirePage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .entirePage .mainPage .responsiveNextSteps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entirePage .mainPage .responsiveNextSteps .nextSteps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f8f2e9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 30%;
+  }
+  .entirePage .mainPage .responsiveNextSteps .nextSteps h3 {
+    padding-bottom: 16px;
+    font-size: 1em;
+  }
+  .entirePage .mainPage .responsiveNextSteps .nextSteps p {
+    margin-bottom: 8px;
+    font-weight: normal;
+  }
+  .entirePage .mainPage .fruitPeople {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+  }
+  .entirePage .mainPage .fruitPeople img {
+    height: 100px;
+    width: 150px;
+  }
+  .entirePage .mainPage .fruitPeople .beetRoot {
+    height: 170px;
+    width: 120px;
+  }
+  .entirePage .mainPage .fruitPeople .banana {
+    margin-left: 8px;
+    height: 60px;
+    width: 140px;
+  }
+}
+/*# sourceMappingURL=DashboardNotPaid.module.css.map */

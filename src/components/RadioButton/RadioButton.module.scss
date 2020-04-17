@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.radioButton {
+  font-size: 1em;
+  padding: $base-spacing 0;
+  input[type="radio"]:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -11px;
+    left: -1px;
+    position: relative;
+    background-color: $primary-background;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid $primary-color;
+  }
+
+  input[type="radio"]:checked:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -11px;
+    left: -1px;
+    position: relative;
+    background-color: $primary-color;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid $primary-color;
+  }
+
+  label {
+    margin-left: $base-spacing * 3;
+  }
+}
